@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2{
+            color: aquamarine;
+        }
+        body{
+    background-color: yellow;
+    background-image: url("IMG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 800px;
+}
+#grad1 {
+            height: 400px;
+            background-color:rgb(40, 162, 199); /* For browsers that do not support gradients */
+            background-image: radial-gradient(yellow, red, lawngreen);
+        }
+        @keyframes An1 {
+            0%  {background-color:aqua;}
+            25%  {background-color: green;}
+            50%  {background-color: rgb(128, 0, 30);}
+            75%  {background-color: rgb(0, 0, 128);}
+            100%  {background-color: rgb(128, 0, 0);}
+        }
+        #Animation{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            animation-name: An1;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blueviolet;">Inline CSS</h1>
+    <h2>Internal CSS</h2>
+    <h3>External CSS</h3>
+    <hr>
+    <h1 id="lgs">ID Selector</h1>
+    <h1 class="css">Class Selector</h1>
+    <h1 class="html">Class Selector</h1>
+    <hr>
+    <h4>Group Selector</h4>
+    <p>Group Selector</p>
+    <div id="grad1">
+        Hi
+    </div>
+    <div id="Animation">
+        This is an animation
+    </div>
+</body>
+</html>
